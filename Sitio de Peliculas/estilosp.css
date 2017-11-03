@@ -1,0 +1,65 @@
+header > h1 {
+	
+	font-family: serif;
+	font-weight: normal;
+	text-transform:uppercase;
+	margin-top: 30px;
+}
+*{
+	font-family:Verdana;
+}
+h1 {
+	font-family: Anton;
+	color:#414239;
+	font-size:4em;
+}
+h2.pelicula {
+	font-family:Lobster;
+	font-size:2.5em;
+	color:#9e0947;
+}
+h3.title{
+	color:#ce105c ;
+	font-size:1em;
+}
+div#box {
+		border:1pt solid #d7d8cb;
+		padding:1px;
+		margin:auto;
+		margin-bottom:5pt;	
+}
+img.foto{
+	margin:5px;
+	margin-top:0px;
+	width:90%;
+}
+div.flex-item{
+    margin: 10px;
+}
+p.sipnopsis{
+	text-align:justify;
+}
+div.flex-box{
+	display: -webkit-flex;
+    display: flex;
+}
+LI[famoso="Principal"]{
+	font-weight:bold;
+}
+LI[famoso="Secundario"]{
+	font-style: italic;
+}
+a.opacidad img {
+	filter:alpha(opacity=100);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity: 1.0;
+  }
+a.opacidad:hover img {
+	filter:alpha(opacity=80);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	opacity: 0.8;
+}
+ul {
+    list-style-image: url(http://web-toolkit.global.sky.com/2.2.13-rc-v1/_site/static/font-svgs/carousel-play.svg);
+}
+

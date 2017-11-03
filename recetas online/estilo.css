@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+	float: left;
+}
+
+#titulo-sitio {
+	size: 4em;
+	color: #d39a0a;
+	text-shadow: 2px 2px 10px #bc8609; 
+}
+
+body {
+	background-color: white;
+}
+
+.resumenes {
+	margin-left: 8.33%;
+}
+
+hr {
+	clear: both;
+}
+
+.resumen-receta {
+	border-radius: 15px;
+	font-variant: small-caps;
+	margin: 5px;
+	display: inline-block;
+	padding: 5px;
+	background-image: url('fondomini.jpg');
+	background-size: 100% 100%;
+}
+
+.resumen-receta > h3 {
+	color: #d69f2a;
+	margin: 2px;
+}
+
+.resumen-receta > a {
+	font-size: 1.5em;
+	color: #db990a;
+	text-decoration: underline;
+	display: block;
+	padding-bottom: 5px;
+	border-bottom: 1pt solid white;
+}
+
+.resumen-receta > a:hover {
+	color: #edc163 ;
+	text-decoration: underline;
+}
+
+.resumen-receta > a:visited {
+	color: #7c652e  ;
+}
+
+.resumen-receta p {
+	margin: 2px;
+}
+
+.detalle-receta {
+	border-bottom: 3pt dotted #d7d8cb;
+}
+
+.detalle-receta div, .detalle-receta img{
+	display: inline-block;
+	margin: 5px;
+}
+
+.detalle-receta img{
+	margin-left: 4.17%;
+}
+
+.detalle-receta p, .detalle-receta audio{
+	margin-left: 5px;
+}
+
+@media screen and (max-width: 800px){
+	[class*="col-"] {
+		width: 100%;
+	}
+
+	#titulo-sitio {
+		text-align: center;
+	}
+
+	.resumenes {
+		margin: 0;
+	}
+
+	.resumen-receta, .detalle-receta div, .detalle-receta img {
+		margin: 5px 0 5px 0;
+	}
+
+	.resumen-receta > p {
+		display: none;
+	}
+
+	.resumen-receta > h3 {
+		float: right;
+	}
+
+	.resumen-receta > a {
+		font-size: 1.75em;
+		border: none;
+		color:#17202A;
+	}
+	
+ 	.detalle-receta:last-child {
+		display: none;
+	} 
+
+	.detalle-receta {
+		width: 50%;
+		padding: 5px;
+		border: none;
+		position: relative;
+	}
+
+	.center {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.detalle-receta  p {
+		display: none;
+	}
+
+	.detalle-receta h2 {
+		text-align: center;
+	}
+
+	audio {
+		width: 100%;
+	}
+	
+}
